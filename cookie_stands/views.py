@@ -3,7 +3,7 @@ from rest_framework.generics import (
     RetrieveUpdateDestroyAPIView,
 )
 from .models import Cookie
-from .permissions import IsOwnerOrReadOnly
+from .permissions import IsPurchasherOrReadOnly
 from .serializers import CookieSerializer
 
 
@@ -13,6 +13,6 @@ class CookieList(ListCreateAPIView):
 
 
 class CookieDetail(RetrieveUpdateDestroyAPIView):
-    permission_classes = (IsOwnerOrReadOnly,)
+    permission_classes = (IsPurchasherOrReadOnly,)
     queryset = Cookie.objects.all()
     serializer_class = CookieSerializer
