@@ -2,7 +2,7 @@
 name = "api-quick-start"
 version = "0.1.0"
 description = ""
-authors = ["JB-Tellez <jb.tellez@gmail.com>"]
+authors = ["Brian Lemons - brian.m.lemons@outlook.com"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
